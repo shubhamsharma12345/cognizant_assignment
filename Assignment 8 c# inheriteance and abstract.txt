@@ -1,0 +1,49 @@
+
+
+3)
+using System;
+
+namespace Console1
+{
+    public abstract class Animals
+    {
+        public abstract void cats();
+        public abstract void dogs();
+    }
+
+    class Cats : Animals
+    {
+        public override void cats()  
+        {
+            Console.WriteLine("Cats Meow");
+        }
+
+        public override void dogs()
+        {
+
+        }
+    }
+        class Dogs : Animals
+        {
+            public override void cats()
+            {
+
+            }
+
+            override public void dogs()
+            {
+                Console.WriteLine("Dogs bark");
+            }
+          }
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Cats cat = new Cats();
+                cat.cats();
+                Dogs dog = new Dogs();
+                dog.dogs();
+            }
+        }
+    }
+
